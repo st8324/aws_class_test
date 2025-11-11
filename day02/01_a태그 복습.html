@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>a태그 복습 예제</title>
+</head>
+<body>
+	<!-- 
+	링크를 생성하여 링크 클릭하면 구글로 이동하는 코드를 작성하세요. 
+	단, 새탭에서 열리도록 작성하세요. 문구는 "구글로" 
+	-->
+	<a href="https://google.com" target="_blank">구글로</a>
+	<!-- 
+	링크를 생성하여 링크를 클릭하면 파일을 다운로드 하는 코드를 작성하세요.
+	현재 파일을 다운로드 하도록 작성하세요. 
+	파일명은 현재 파일 그대로
+	문구는 "다운로드"
+	-->
+	<br>
+	<a href="01_a태그 복습.html" download>다운로드</a>
+	<!-- 
+	링크를 생성하여 링크를 클릭하면 파일을 다운로드 하는 코드를 작성하세요.
+	index.html을 다운로드 하도록 작성하세요. 
+	파일명은 "복습예제"
+	문구는 "다운로드"
+	-->
+	<br>
+	<!-- 
+	상대경로 : 현재 위치를 기준으로 찾음 
+	../ : 상위폴더
+	./ : 현재폴더
+	-->
+	<a href="../index.html" download="복습예제">다운로드</a>
+	<!-- 절대경로 : 최상위 폴더를 기준으로 위치를 찾음 -->
+	<a href="/index.html" download="복습예제">다운로드</a>
+</body>
+</html>
