@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>서식 태그 예제</title>
+</head>
+<body>
+	<!-- 
+	교재 p.41
+	태그 종류
+	  - block태그 : 새 라인에서 시작. 크기 변경이 가능
+		- inline태그 : 현재 라인에서 시작. 크기 변경이 불가능
+		- inline-block태그 : 현재 라인에서 시작. 크기 변경이 가능
+	h1태그 ~ h6태그
+	  - 제목 태그
+		- 숫자가 작을수록 글자 크기가 큼
+		- block 태그
+	-->
+	<h1>제목1</h1>
+	<h2>제목2</h2>
+	<h3>제목3</h3>
+	<h4>제목4</h4>
+	<h5>제목5</h5>
+	<h6>제목6</h6>
+	
+	<!--
+	교재 p.43
+	p 태그
+	  - 문단을 지정하는 태그
+		- 문단 위 아래에 여백이 있음
+		- 문단끼리 여백이 겹치는 경우 큰 여백 하나만 적용
+		- block 태그
+	-->
+	안녕 
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium reprehenderit nostrum consectetur omnis natus veniam praesentium optio fuga deleniti?</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium reprehenderit nostrum consectetur omnis natus veniam praesentium optio fuga deleniti?</p>
+	안녕 <br>
+	안녕
+	<!-- 
+	교재 p.44
+	div 태그
+	  - 대표적인 block 태그
+		- 여러 태그들을 묶을 때 사용
+	 -->
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo fugiat nobis sed. Harum tenetur esse velit autem maxime ipsa alias qui voluptatum dicta, fuga nobis aliquam reiciendis suscipit. Fugiat?</div>
+	<!-- 
+	교재 p.45
+	strong 태그
+	  - 강조할 때 사용
+		- 굵은 글씨
+		- inline 태그
+	em 태그
+	  - 약한 강조할 때 사용
+		- 기울임
+		- inline 태그
+
+	스크린 리더기가 strong 태그, em 태그를 강하게 읽음
+
+	b 태그
+	  - 굵은 글씨
+		- inline 태그
+	i 태그
+	  - 기울임
+		- 보통 아이콘을 사용할 때 쓰임
+		- inline 태그
+	-->
+	<p>
+		안녕하세요. 제 <i>이름</i>은 <b>홍길동</b>입니다.
+	</p>
+	<p>
+		안녕하세요. 제 <em>이름</em>은 <strong>홍길동</strong>입니다.
+	</p>
+	<!-- 
+	교재 p.47
+	span 태그
+	  - 대표적인 inline 태그
+		- 기능이 없음
+		- 글자들을 묶어서 스타일을 줄 때 사용
+	-->
+	<p>
+		안녕하세요. 제 이름은 <span style="color: red;">홍길동</span>입니다.
+	</p>
+	<!-- 
+	교재 p.48
+	img 태그
+	  - 이미지를 넣을 때 사용
+		- inline-block 태그
+		- 속성
+		  - src : 보여줄 이미지 주소
+			- alt : 이미지가 가져오지 못할 때 보여줄 문구. 스크린 리더기가 읽어 줌
+			- width : 너비, 기본값은 이미지 원본의 100% 너비, 기본 단위 px, auto 지정 가능
+			- height : 높이, 기본값은 이미지 원본의 100% 높이, 기본 단위 px, auto 지정 가능
+	-->
+	고양이 
+	<img 
+		src="https://cdn.autotribune.co.kr/news/photo/202511/40674_243142_4724.jpeg" 
+		alt="고양이" width="300" height="auto">
+	<!-- 
+	br태그
+	  - 줄바꿈
+		- 스크린 리더기가 읽을 수 있으니 남용은 금지
+	 -->
+</body>
+</html>
