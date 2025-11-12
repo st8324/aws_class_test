@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자손자식선택자</title>
+	<style>
+		/* 
+		자손 선택자(교재 p.75)
+			- 요소의 안에 있는 선택자
+			- 선택자 선택자
+		자식 선택자(교재 p.76)
+			- 요소 바로 밑에 있는 선택자
+			- 선택자 > 선택자
+		*/
+		.box{	color: red;}
+		.container .box{ color: blue;}
+		.container>.box{ color: green;}
+	</style>
+</head>
+<body>
+	<!-- 
+	.container의 자손 요소는?
+	- <div class="box">1</div>
+	- <div class="box">2</div>
+	- <div class="box">3</div>
+	- <div class="side"></div>
+	- <div class="box">4</div>
+
+	.container의 자식 요소는?
+	- <div class="box">1</div>
+	- <div class="box">2</div>
+	- <div class="box">3</div>
+	- <div class="side"></div>	
+	-->
+	<div class="container">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="side">
+			<div class="box">4</div>
+		</div>
+	</div>
+	<div class="box">5</div>
+</body>
+</html>
