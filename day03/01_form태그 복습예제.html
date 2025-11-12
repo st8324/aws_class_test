@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form 관련 태그 복습 예제</title>
+</head>
+<body>
+	<!-- 
+	아이디, 비번, 이메일을 입력하여 회원가입이 진행되도록 화면을 구성하세요.
+	아이디, 비번, 이메일은 필수 항목입니다.
+	-->
+	<h1>회원가입</h1>
+	<form action="" method="get">
+		<div>
+			<label for="id">아이디</label>
+			<div>
+				<input type="text" id="id" placeholder="아이디를 입력하세요." name="id" required>
+			</div>
+		</div>
+		<div>
+			<label for="pw">비밀번호</label>
+			<div>
+				<input type="password" id="pw" placeholder="비밀번호를 입력하세요." name="pw" required>
+			</div>
+		</div>
+		<div>
+			<label for="email">이메일</label>
+			<div>
+				<input type="email" id="email" placeholder="이메일을 입력하세요." name="email" required>
+			</div>
+		</div>
+		<button type="submit">회원가입</button>
+	</form>
+</body>
+</html>
