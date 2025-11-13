@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>반응 상태 선택자</title>
+	<style>
+		/* 
+		교재 p.84 
+		반응 선택자
+		
+		선택자:hover
+		- 요소에 마우스를 올렸을 때  
+		선택자:active
+		- 요소를 클릭했을 때 */
+
+		.box1:hover{ color: red;}
+		.box2:active{ color:blue;}
+
+		/* 
+		상태 선택자
+		선택자:checked
+		- 요소가 checked 요소를 선택
+		- input태그중 checkbox와 radio에서 사용
+		
+		선택자:focus 
+		- 요소가 활성화된 상태. 주로 input태그에서 커서가 깜빠이는 경우
+		
+		선택자:enabled
+		- 요소가 사용 가능한 상태
+
+		선택자:disabled
+		- 요소가 사용 불가능한 상태
+		*/
+		[name=hobby]:checked + span{color: red;}
+		.input:enabled { color: green;}
+		.input:disabled {color: red;}
+		.input:focus { color: blue;}
+	</style>
+</head>
+<body>
+	<div class="box1">1</div>
+	<div class="box2">2</div>
+	<div class="container">
+		<h1>당신의 취미는?</h1>
+		<label>
+			<input type="checkbox" name="hobby" value="운동">
+			<span>운동</span>
+		</label>
+		<label>
+			<input type="checkbox" name="hobby" value="독서">
+			<span>독서</span>
+		</label>
+	</div>
+	<div class="inputs">
+		<input type="text" class="input" value="123">
+		<input type="text" class="input" value="123" readonly>
+		<input type="text" class="input" value="123" disabled>
+	</div>
+</body>
+</html>

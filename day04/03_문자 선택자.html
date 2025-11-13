@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>문자 선택자</title>
+	<style>
+		/* 
+		선택자::first-letter
+		- 첫번째 글자
+		선택자::first-line
+		- 첫번째 줄 선택
+		선택자::selection
+		- 드래그한 글자 선택
+		선택자::after
+		- 요소 뒤에 공간을 선택
+		- content 속성은 필수
+		- 주로 글자 앞에 기호를 넣을 때 사용
+		- float 속성할 때 유용(나중에 예제로 설명)
+		선택자::before
+		- 요소 앞에 공간을 선택
+		- content 속성은 필수
+		*/
+		.text::first-letter{font-size: 30px;}
+		.text::first-line{color:red;}
+		.text::selection{background-color: skyblue;}
+		.name::before{content: '내 이름은 ';}
+		.name::after{content: '입니다.';}
+	</style>
+</head>
+<body>
+	<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt natus ad ipsum temporibus facere dolorem in voluptas doloremque alias sed inventore adipisci, nihil ex impedit maiores sit esse fuga ab.</p>
+	<span class="name">홍길동</span>
+</body>
+</html>
