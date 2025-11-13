@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>구조 선택자</title>
+	<style>
+		/* 
+		형태 구조 선택자(교재 p.78~82)
+		- 선택자와 일치하는 형제 요소들 중 몇번째 요소인지를 선택
+		- 이 때, 선택자는 태그 선택자만 적용
+		- 태그명:nth-of-type(숫자)
+			- 태그들 중 숫자번째에 있는 요소
+		- 태그명:last-of-type
+			- 태그들 중 마지막 요소
+		- 태그명:first-child
+			- 태그들 중 첫번째 요소
+		- 태그명:nth-of-type(수열)
+			- 수열번째 있는 요소들
+			- 수열 : 2n, 2n-1, 3n
+
+		일반 구조 선택자
+		- 태그 종류 상관없이 형제 요소들 중 몇번째 요소인지를 선택
+		- :nth-child(숫자), last-child, first-child, nth-child(수열)
+		*/
+		
+		.container1 > .list > p:first-of-type{ color: red; }
+		.container1 > .list > p:last-of-type{ color: blue; }
+		.container1 > .list > p:nth-of-type(2){ font-size: 30px; }
+		.container1 > .list > p:nth-of-type(2n-1){ border: 1px solid black; }
+
+
+
+		.container2 > .list > :first-child{ color: red; }
+		.container2 > .list > :last-child{ color: blue; }
+		.container2 > .list > :nth-child(2){ font-size: 30px; }
+		.container2 > .list > :nth-child(2n-1){ border: 1px solid black; }
+	</style>
+</head>
+<body>
+	<h1>of-type</h1>
+	<div class="container1">
+		<div class="list">
+			<span class="item">span</span>
+			<p class="item">p</p>
+			<a href="" class="item">a</a>
+			<p class="item">p2</p>
+			<p class="item">p3</p>
+			<p class="item">p4</p>
+		</div>
+	</div>
+	<hr>
+	<h1>child</h1>
+	<div class="container2">
+		<div class="list">
+			<span class="item">span</span>
+			<p class="item">p</p>
+			<a href="" class="item">a</a>
+			<p class="item">p2</p>
+			<p class="item">p3</p>
+			<p class="item">p4</p>
+		</div>
+	</div>
+</body>
+</html>
