@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>스타일 복습 예제</title>
+	<style>
+		.link{
+			color : black;
+			text-decoration : none;
+		}
+		.link:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		.scale{
+			font-size: 30px;
+		}
+		.scale:hover{
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	링크를 클릭하면 네이버로 이동하는 화면을 구성하세요.
+	- 새탭에서 링크가 열림
+	- 문구는 네이버로 이동
+	- hover 하기 전 글자 색은 검은색, 밑줄은 없음
+	- hover 를 하면 글자색은 빨간색, 밑줄이 생김
+	- 선택자를 지정 : class명이 link
+	-->
+	<a href="https://naver.com" target="_blank" class="link">네이버로 이동</a>
+	<!-- 
+	꽝! 이라는 글자를 hover하면 글자가 커지는 화면을 구성하세요.
+	- hover 전에는 글자 크기가 30px
+	- hover 후에는 글자 크기가 50px
+	-->
+	<div>
+		<span class="scale">꽝!</span>
+	</div>
+</body>
+</html>
