@@ -63,6 +63,14 @@
 			- border-top : 1px solid black;
 				- 위 테두리를 두께 1px 종류 solid 색상 black으로 설정
 		
+		border-radious
+		- 둥근 테두리를 만드는 속성
+		- border-위치1-위치2-radious를 줄여 쓴 속성
+			- 위치1 : top, bottom, 위치2: left, right
+		- 순서는 좌상, 우상, 우하, 좌하 
+		- px도 되고 %도 됨
+		- %를 이용하면 원이나 타원을 만들수 있음
+
 		box-sizing
 		- 너비/높이의 기준 방법을 설정하는 속성
 		- 값
@@ -102,6 +110,15 @@
 		.container5 > .box4{ 
 			box-sizing: border-box; padding: 10px; border: 10px solid black;
 		}
+
+		.container6 > .box1{
+			width: 100px; height: 100px; border: 3px solid black;
+			border-radius: 10px 20px 30px 40px;
+		}
+		.container6 > .box2{
+			width: 100px; height: 100px; border: 3px solid black;
+			border-radius: 50%;
+		}
 	</style>
 </head>
 <body>
@@ -134,6 +151,10 @@
 		<div class="box2">2</div>
 		<div class="box3">3</div>
 		<div class="box4">4</div>
+	</div>
+	<div class="container6">
+		<div class="box1"></div>
+		<div class="box2"></div>
 	</div>
 </body>
 </html>
